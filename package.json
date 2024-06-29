@@ -1,0 +1,13 @@
+{
+  "name": "devfolio-child",
+  "private": true,
+  "version": "0.1.0",
+  "author": "Erik Larson",
+  "description": "A scalable headless WordPress theme designed for managing your portfolio content",
+  "keywords": [],
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.22.2",
+    "prettier": "^3.3.2"
+  }
+}
