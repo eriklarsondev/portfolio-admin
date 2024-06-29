@@ -15,7 +15,8 @@ $devfolio = new Devfolio();
  *** required plugin config
  *************************************************************************/
 
-$devfolio->requirePlugin('ACF_To_REST_API', 'ACF to REST API');
+$devfolio->requirePlugin('ACF to REST API', 'ACF_To_REST_API');
+$devfolio->requirePlugin('WP-REST-API V2 Menus');
 
 /**************************************************************************
  *** menu location config
