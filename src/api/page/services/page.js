@@ -11,7 +11,7 @@ module.exports = createCoreService(model, ({ strapi }) => ({
   async fetchOne(id) {
     const page = await strapi.db.query(model).findOne({
       where: { slug: id },
-      populate: ['seo']
+      populate: ['controls', 'seo']
     })
     return page
   }

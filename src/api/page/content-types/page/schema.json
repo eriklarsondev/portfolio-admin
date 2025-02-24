@@ -21,6 +21,11 @@
     "headline": {
       "type": "text"
     },
+    "controls": {
+      "type": "component",
+      "component": "menu.menu-item",
+      "repeatable": true
+    },
     "seo": {
       "type": "component",
       "component": "meta.seo"
