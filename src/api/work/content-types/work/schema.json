@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experience",
+  "info": {
+    "singularName": "work",
+    "pluralName": "experience",
+    "displayName": "Work"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "company": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "location": {
+      "type": "string"
+    },
+    "jobTitle": {
+      "type": "string",
+      "required": true
+    },
+    "duration": {
+      "type": "string"
+    },
+    "startYear": {
+      "type": "string",
+      "required": true
+    },
+    "endYear": {
+      "type": "string"
+    },
+    "technologies": {
+      "type": "text"
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}
