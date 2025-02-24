@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "content_blocks",
+  "info": {
+    "singularName": "content-block",
+    "pluralName": "content-blocks",
+    "displayName": "Content Block"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "slug": {
+      "type": "string"
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

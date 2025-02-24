@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "slug": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "seo": {
+      "type": "component",
+      "component": "meta.seo"
+    }
+  }
+}
