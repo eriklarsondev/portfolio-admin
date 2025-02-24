@@ -1,3 +1,9 @@
+/**
+ * returns string argument formatted as a URL slug
+ *
+ * @param {*} text
+ * @returns
+ */
 function formatQueryParam(text) {
   if (text) {
     text = text.replace(/[^\w\s]/gi, '')
@@ -8,6 +14,12 @@ function formatQueryParam(text) {
   return
 }
 
+/**
+ * returns array after parsing string argument
+ *
+ * @param {*} text
+ * @returns
+ */
 function getArrayFromString(text) {
   if (text) {
     return text.split(',').map(item => item.trim())
