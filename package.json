@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-admin",
+  "private": true,
+  "version": "0.1.0",
+  "author": "Erik Larson",
+  "description": "Portfolio admin app developed with Strapi",
+  "scripts": {
+    "build": "strapi build",
+    "deploy": "strapi deploy",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.10.3",
+    "@strapi/plugin-users-permissions": "5.10.3",
+    "@strapi/strapi": "5.10.3",
+    "better-sqlite3": "11.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
+  },
+  "engines": {
+    "node": "18.20.3",
+    "npm": "10.7.0"
+  },
+  "strapi": {
+    "uuid": "c0596069-bc97-4ca7-a902-703bb23d3c47"
+  }
+}

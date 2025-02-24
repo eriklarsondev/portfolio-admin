@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.strapi
+.strapi-updater.json
+.tmp
+
+node_modules
+package-lock.json
+
+build
+types
