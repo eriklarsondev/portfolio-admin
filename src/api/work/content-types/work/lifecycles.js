@@ -10,6 +10,13 @@ module.exports = {
   }
 }
 
+/**
+ * sets job duration by subtracting start year from end year
+ *
+ * @param {*} startYear
+ * @param {*} endYear
+ * @returns
+ */
 function setJobDuration(startYear, endYear) {
   const end = endYear ? endYear : new Date().getFullYear()
 
