@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "typed_headings",
+  "info": {
+    "singularName": "typed-heading",
+    "pluralName": "typed-headings",
+    "displayName": "Typed Heading"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "slug": {
+      "type": "string"
+    },
+    "items": {
+      "type": "text"
+    }
+  }
+}
