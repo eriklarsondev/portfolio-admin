@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testimonials",
+  "info": {
+    "singularName": "testimonial",
+    "pluralName": "testimonials",
+    "displayName": "Testimonial"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "image": {
+      "type": "media",
+      "allowedTypes": ["images"]
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "company": {
+      "type": "string"
+    }
+  }
+}
