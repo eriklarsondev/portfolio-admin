@@ -21,6 +21,12 @@
     "websiteUrl": {
       "type": "string"
     },
+    "services": {
+      "type": "string"
+    },
+    "budget": {
+      "type": "string"
+    },
     "message": {
       "type": "text",
       "required": true
