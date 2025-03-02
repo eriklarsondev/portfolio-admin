@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "sidebar_about_page",
+  "info": {
+    "singularName": "about-page-sidebar",
+    "pluralName": "sidebar-about-page",
+    "displayName": "About Page Sidebar"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "image": {
+      "type": "media",
+      "allowedTypes": ["images"]
+    },
+    "topics": {
+      "type": "component",
+      "component": "sidebar.topic",
+      "repeatable": true
+    }
+  }
+}
