@@ -10,6 +10,6 @@ const model = 'api::lead.lead'
 module.exports = createCoreController(model, ({ strapi }) => ({
   async create(ctx) {
     const { body } = ctx.request
-    return await strapi.service(model).save(body)
+    return await strapi.service(model).saveLead(body)
   }
 }))
