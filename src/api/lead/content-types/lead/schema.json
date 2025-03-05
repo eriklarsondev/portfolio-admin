@@ -21,11 +21,11 @@
     "websiteUrl": {
       "type": "string"
     },
-    "services": {
+    "type": {
       "type": "string"
     },
     "budget": {
-      "type": "string"
+      "type": "number"
     },
     "message": {
       "type": "text",

@@ -18,6 +18,12 @@
     "icon": {
       "type": "string",
       "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string"
     }
   }
 }
