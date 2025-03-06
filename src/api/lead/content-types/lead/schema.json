@@ -25,7 +25,7 @@
       "type": "string"
     },
     "budget": {
-      "type": "number"
+      "type": "integer"
     },
     "message": {
       "type": "text",
