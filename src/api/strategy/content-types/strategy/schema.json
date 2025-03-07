@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "strategies",
+  "info": {
+    "singularName": "strategy",
+    "pluralName": "strategies",
+    "displayName": "Strategy"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "order": {
+      "type": "integer"
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}
