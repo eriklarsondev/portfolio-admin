@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ctas",
+  "info": {
+    "singularName": "cta",
+    "pluralName": "ctas",
+    "displayName": "CTA"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "slug": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "allowedTypes": ["images"]
+    },
+    "heading": {
+      "type": "text"
+    },
+    "controls": {
+      "type": "component",
+      "component": "menu.menu-item",
+      "repeatable": true
+    }
+  }
+}
