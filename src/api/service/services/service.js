@@ -20,6 +20,20 @@ module.exports = createCoreService(model, ({ strapi }) => ({
       where: { slug: id },
       populate: ['seo']
     })
+
+    if (service) {
+      service.relatedServices = await this.getRelatedServices(service.slug)
+    }
     return service
+  },
+
+  async getRelatedServices(slug) {
+    const services = await strapi.documents(model).findMany({
+      filters: {
+        slug: { $ne: slug }
+      },
+      sort: { name: 'asc' }
+    })
+    return services
   }
 }))
