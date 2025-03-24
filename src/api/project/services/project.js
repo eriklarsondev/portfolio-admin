@@ -9,10 +9,11 @@ const { getArrayFromString } = require('../../../util')
 const model = 'api::project.project'
 
 module.exports = createCoreService(model, ({ strapi }) => ({
-  async fetch(featured) {
+  async fetch(featured, skip) {
     const projects = await strapi.documents(model).findMany({
       filters: {
-        featured: featured
+        featured: featured,
+        slug: { $ne: skip }
       },
       sort: { name: 'asc' },
       populate: ['image']
