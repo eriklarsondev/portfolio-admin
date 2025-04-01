@@ -12,7 +12,7 @@ module.exports = createCoreService(model, ({ strapi }) => ({
     const articles = await strapi.documents(model).findMany({
       status: 'published',
       sort: {
-        publishedAt: 'desc'
+        published: 'desc'
       },
       limit: limit ? limit : 2,
       populate: ['categories']

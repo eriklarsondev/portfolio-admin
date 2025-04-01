@@ -10,6 +10,10 @@
     "draftAndPublish": true
   },
   "attributes": {
+    "published": {
+      "type": "date",
+      "required": true
+    },
     "name": {
       "type": "string",
       "unique": true,

@@ -23,7 +23,7 @@ module.exports = createCoreService(model, ({ strapi }) => ({
           where: {
             publishedAt: { $notNull: true }
           },
-          sort: { publishedAt: 'desc' },
+          sort: { published: 'desc' },
           populate: ['categories']
         },
         seo: true
