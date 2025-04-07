@@ -8,12 +8,9 @@ const { createCoreService } = require('@strapi/strapi').factories
 const model = 'api::article.article'
 
 module.exports = createCoreService(model, ({ strapi }) => ({
-  async fetch(limit, featured) {
+  async fetch(limit) {
     const articles = await strapi.documents(model).findMany({
       status: 'published',
-      filters: {
-        featured: featured
-      },
       sort: {
         published: 'desc'
       },
@@ -49,9 +46,13 @@ module.exports = createCoreService(model, ({ strapi }) => ({
 
     if (index > 0) {
       nav.push(articles[index - 1])
+    } else {
+      nav.push(null)
     }
     if (index < articles.length - 1) {
       nav.push(articles[index + 1])
+    } else {
+      nav.push(null)
     }
     return nav
   }

@@ -9,8 +9,8 @@ const model = 'api::article.article'
 
 module.exports = createCoreController(model, ({ strapi }) => ({
   async find(ctx) {
-    const { limit, featured } = ctx.query
-    return await strapi.service(model).fetch(limit, featured)
+    const { limit } = ctx.query
+    return await strapi.service(model).fetch(limit)
   },
 
   async findOne(ctx) {
