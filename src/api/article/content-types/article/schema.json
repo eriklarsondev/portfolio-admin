@@ -10,6 +10,14 @@
     "draftAndPublish": true
   },
   "attributes": {
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "image": {
+      "type": "media",
+      "allowedTypes": ["images"]
+    },
     "published": {
       "type": "date",
       "required": true
