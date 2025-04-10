@@ -19,7 +19,7 @@ module.exports = createCoreService(model, ({ strapi }) => ({
 
   async sendEmail(data) {
     const config = {
-      to: 'eriklarsonco@gmail.com',
+      to: 'erik@elwebco.com',
       subject: `You have a new message from ${data.fullName}`,
       html: this.getEmailTemplate(data)
     }
